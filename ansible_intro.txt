@@ -1,0 +1,27 @@
+Ansible - IT automation tool 
+             
+              Ansible is written in Python, launched in early 2013.  
+              Acquire Ansible by Redhat 2015 - they used Openstack 
+        Playbooks are written in YAML format
+
+  What is Ansible Good for?
+         
+           1.AUTOMATING CONFIGURATION MANAGEMENT
+    2.APPLICATION DEPLOYMENT 
+    3.ORCHESTRATION OF DEPLOYMENT  / multi-tier application, through VMs and containers.
+    4.PROVISIONING SERVERS like AWS, Azure, google
+
+  Why Ansible?
+ 
+           1. Open source software
+         2. Agent less 
+     3. Easy to use / Human readable
+    4. Python backend fast process / Ansible is modular. 400+ modules 
+
+  
+         How to Run ?
+   
+           Ad-hoc command:  ansilbe  inventory -m
+           Playbook: Ansible-playbook
+           Roles: ansible-galaxy 
+           Ansible Tower :  Automation Framework / UI and restful API

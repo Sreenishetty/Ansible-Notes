@@ -1,0 +1,32 @@
+Ansible & Config
+
+Basic Ansible file
+  1. Inventory file -This file contains the list of host to be managed
+  2. ansible.cfg - Confirguation files for ansible
+
+Order of preference of confirguation file
+
+  1. File specified by the ANSIBLE_CONFIG environment variable
+  2. ./ansible.cfg (ansible.cfg in the current directory)
+  3. ~/.ansible.cfg (.ansible.cfg in your home directory)
+  4. /etc/ansible/ansible.cfg
+
+Setting up the enviroment
+ Create the aws 1 ec2 instance 1 is master node 2 nd is client node
+
+ 1. Create the new file in master node
+ ansible.cfg
+  in the same directory and paste the below code in the file
+  [defaults]
+  inventory = hosts
+  remote_user = ubuntu
+  private_key_file = location-of-key
+  host_key_checking = False
+
+ 2. Create the antoher file name as host in master node
+ 
+ hosts
+   clientnodes1 ansible_host=ip ansible_port=22
+
+ 3. Test whether the host are accesible
+   $ ansible clientnodes1 -m ping

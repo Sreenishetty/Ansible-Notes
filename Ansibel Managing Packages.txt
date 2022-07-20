@@ -1,0 +1,27 @@
+Managing Packages
+
+   ansible all -m apt -a 'name=nginx state=latest' --become
+
+  ansible all -m apt -a 'name=nginx state=absent' --become
+
+File Transfer
+	vi index.html -->  write the information in this
+	and run this command
+
+ 	 ansible all -m copy -a 'src=/home/ubuntu/aws_ansible/index.html dest=/var/www/html/index.html' --become
+
+
+  Creating new directory
+
+  	ansible clientnodes1 -m file -a 'dest=/home/ubuntu/filedemo mode=777  state=directory'  --become
+and run this command
+
+ssh -i client.pem ubuntu@44.204.40.15
+ls
+ll
+
+Gathering facts
+	ansible clientnode1 -m setup -->this is used to show the inside information the clientnode1
+
+
+

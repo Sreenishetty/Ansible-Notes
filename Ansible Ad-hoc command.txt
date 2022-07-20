@@ -1,0 +1,25 @@
+Ansible Ad-hoc command
+
+ The Ad-Hoc command is the one-liner ansible command that performs one task on the target host. It allows you to
+ execute simple one-line task against one or group of hosts defined on the inventory file configuration.
+ adhoc command has the two parts
+
+  List of host that you want to run the module
+  ansible module to run
+
+  $ ansible all -m ping
+  The first parameter all tells we are performing the task against the all host
+  The second parameter m tells we are going to use ping module
+  
+  To Know the list of modules type the below command in the terminal
+  $ ansible-doc -l | more
+  
+  To Find the detail of modules
+  $ ansible-doc  module-name
+
+
+Shell Commands
+
+  $ansible ansible-client -a "uname -a"
+  $ansible ansible-client -a "df -h
+  $ansible ansible-client -a "free -m"

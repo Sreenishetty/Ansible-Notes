@@ -1,0 +1,33 @@
+ANSIBLE SETUP AND INFOBLOX CLIENT TO AUTOMATE 
+
+sudo apt update
+sudo apt install software-properties-common
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+
+To check the version install in machine
+- > ansible --version
+
+Config file = /etc/ansible/ansible.cfg  --> This should the default config file after the installation of ansible in local machine
+
+TO CREATE A FREE AWS TIER 
+https://www.youtube.com/watch?v=JkxpVLmziIA&t=295s
+
+To setup ansible.cfg and host and connecting aws tier and to test the connection. For these setup please go through this link
+https://www.youtube.com/watch?v=ZjC9sudo pip install infoblox-clientcvu0Kv4&t=816s
+https://www.youtube.com/watch?v=PATUqGQKMw0
+
+for writing the simple playbook this link is useful
+https://www.youtube.com/watch?v=iVi5T864_Sk&t=148s
+
+using Ansible nios modules with Infoblox, you must install the infoblox-client on your Ansible control node
+--> sudo pip install infoblox-client
+
+To view the version of infoblox clien installed
+--> pip3 show infoblox-client
+
+Documentation for the ansible-infoblox
+https://www.infoblox.com/wp-content/uploads/infoblox-deployment-guide-automate-infoblox-infrastructure-using-ansible.pdf
+
+Complete creating records and other important things, We can use this Documentation
+https://docs.w3cub.com/ansible~2.9/modules/nios_host_record_module
