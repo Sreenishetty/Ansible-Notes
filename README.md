@@ -4,7 +4,7 @@ Ansible is a radically simple IT automation system. It handles configuration man
 ## Design Principles
     Have an extremely simple setup process with a minimal learning curve.
     Manage machines quickly and in parallel.
-    Avoid custom-agents and additional open ports, be agentless by leveraging the existing SSH       daemon.
+    Avoid custom-agents and additional open ports, be agentless by leveraging the existing SSH daemon.
     Describe infrastructure in a language that is both machine and human friendly.
     Focus on security and easy auditability/review/rewriting of content.
     Manage new remote machines instantly, without bootstrapping any software.
