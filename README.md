@@ -1,5 +1,7 @@
 # What is Ansible?
+```
 Ansible is a radically simple IT automation system. It handles configuration management, application deployment, cloud provisioning, ad-hoc task execution, network automation, and multi-node orchestration. Ansible makes complex changes like zero-downtime rolling updates with load balancers easy.
+```
 
 ## Design Principles
     Have an extremely simple setup process with a minimal learning curve.
@@ -25,11 +27,11 @@ $ sudo apt -y install software-properties-common
 $ sudo apt install software-properties-common
 $ sudo apt-add-repository ppa:ansible/ansible
 $ sudo apt install ansible
-```
 
 Press Y when prompted to confirm installation.
 
 Your Ansible control node now has all of the software required to administer your hosts. Next, we’ll go over how to set up an inventory file, so that Ansible can communicate with your managed nodes.
+```
 
 ## Finding out the ansible Version
 Type the following command:
