@@ -20,10 +20,12 @@ $ sudo apt update
 $ sudo apt upgrade
 
 ## Following this update, you can install the Ansible software with:
+'''
 $ sudo apt -y install software-properties-common
 $ sudo apt install software-properties-common
 $ sudo apt-add-repository ppa:ansible/ansible
 $ sudo apt install ansible
+'''
 
 Press Y when prompted to confirm installation.
 
